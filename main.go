@@ -25,10 +25,6 @@ func timeHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write(jsonResponse)
 }
 
-func greeting() string {
-	return "Hello from Vitaliy!"
-}
-
 func main() {
 	http.HandleFunc("/time", timeHandler)
 
